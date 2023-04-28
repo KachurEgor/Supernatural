@@ -1,34 +1,37 @@
 @import 'libs/font';
-@import 'libs/slick';
-@import 'libs/animate';
-@import 'libs/owl.carousel.min';
-@import 'libs/owl.theme.default.min';
+// @import 'libs/slick';
+// @import 'libs/animate';
+// @import 'libs/owl.carousel.min';
+// @import 'libs/owl.theme.default.min';
 
 @import 'base/_variables';
-@import 'base/normalize';
-@import 'base/mixins';
-@import 'blocks/promo';
+// @import 'base/normalize';
+// @import 'base/mixins';
+// @import 'blocks/promo';
 @import 'blocks/header';
-@import 'blocks/buttons';
-@import 'blocks/advantage';
-@import 'blocks/forms';
-@import 'blocks/consultation';
-@import 'blocks/carousel';
-@import 'blocks/catalog';
-@import 'blocks/reviews';
-@import 'blocks/footer';
-@import 'blocks/modal';
-@import 'blocks/pageup';
-@import 'base/media';
+// @import 'blocks/buttons';
+// @import 'blocks/advantage';
+// @import 'blocks/forms';
+// @import 'blocks/consultation';
+// @import 'blocks/carousel';
+// @import 'blocks/catalog';
+// @import 'blocks/reviews';
+// @import 'blocks/footer';
+// @import 'blocks/modal';
+// @import 'blocks/pageup';
+// @import 'base/media';
 
 
 * {
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: Gilroy , sans-serif;
     font-display: swap;
     margin: 0;  
 }
 .container {
-   max-width: 950px;
+   max-width: 1630px;
    margin: 0 auto;
    padding: 0 15px;
+}
+body {
+    background-color: $main-color;
 }
