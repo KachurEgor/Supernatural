@@ -1,0 +1,14 @@
+.title {
+    font-weight: 700;
+    color: #FFFFFF;
+    &__header {
+        font-size: 8rem;
+        max-width: 120rem;
+        line-height: 9.4rem;
+        padding-bottom: 5rem;
+    }
+    &__popular {
+        font-size: 5rem;
+        line-height: 5.9rem;
+    }
+}

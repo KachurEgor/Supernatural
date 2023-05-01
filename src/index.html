@@ -10,9 +10,73 @@
 <body>
     <section class="header">
         <div class="header__main">
-            <svg width="711" height="1466" viewBox="0 0 711 1466" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 711 1466" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M846.646 -117.886C968.951 -85.8 1108.59 -141.543 1211.03 -55.6646C1328.09 42.4782 1441.59 190.929 1443.01 382.09C1444.41 571.81 1297.73 715.54 1218 885.616C1140.5 1050.96 1107.56 1258.9 982.984 1363.45C853.482 1472.13 692.386 1486.33 553.766 1443.07C421.909 1401.91 340.168 1256.53 247.04 1133.77C149.912 1005.73 -8.0201 905.387 0.737113 714.062C9.59009 520.645 204.937 423.983 287.364 252.781C365.257 90.9965 336.279 -165.61 465.498 -251.251C594.784 -336.936 713.71 -152.761 846.646 -117.886Z" fill="#686DE0"/>
             </svg>
+        </div>
+        <div class="container">
+            <ul class="header__top">
+                <li class="header__logo">
+                    <img src="icons/logo.png" alt="logo">
+                </li>
+                <li class="header__menu">
+                    <ul class="header__menu-wrapper menu ">
+                        <li><a class="menu__item">Фильмы</a></li>
+                        <li><a class="menu__item">Тренды</a></li>
+                        <li><a class="menu__item">Новости</a></li>
+                    </ul>
+                </li>
+                <li class="header__search">
+                    <a href="#">
+                        <svg viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34 33.5L26.2667 25.7667M30.4444 15.7222C30.4444 23.5769 24.0769 29.9444 16.2222 29.9444C8.36751 29.9444 2 23.5769 2 15.7222C2 7.86751 8.36751 1.5 16.2222 1.5C24.0769 1.5 30.4444 7.86751 30.4444 15.7222Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34 33.5V29.9444C34 28.0585 33.1571 26.2497 31.6569 24.9161C30.1566 23.5825 28.1217 22.8333 26 22.8333H10C7.87827 22.8333 5.84344 23.5825 4.34315 24.9161C2.84285 26.2497 2 28.0585 2 29.9444V33.5M26 8.61111C26 12.5385 22.4183 15.7222 18 15.7222C13.5817 15.7222 10 12.5385 10 8.61111C10 4.68375 13.5817 1.5 18 1.5C22.4183 1.5 26 4.68375 26 8.61111Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <h1 class="title title__header">Фильмы, сериалы, мультфильмы в одном месте!</h1>
+            <p class="descr descr__header">Всегда хотели узнать где можно дешевле посмотреть то или иное произведение исскуства? Просто обсудить какую-либо кинофраншизу? А может просто посмотреть последние новости в сфере кино?<br>Тогда, данный сайт был сделан для вас!</p>
+            <button class="btn btn__header">Посмотреть каталог фильмов</button>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="popular__main">
+            <svg width="454" height="1380" viewBox="0 0 454 1380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-219.457 1271.45C-327.987 1252.2 -445.119 1303.89 -540.347 1240.72C-649.174 1168.54 -758.603 1056.05 -773.866 903.699C-789.013 752.495 -672.226 630.284 -615.501 490.537C-560.355 354.68 -547.029 187.167 -446.558 97.3437C-342.114 3.96887 -203.308 -15.7034 -79.7951 11.6054C37.6926 37.582 119.325 149.271 209.182 242.328C302.899 339.383 447.368 411.207 453.811 564.218C460.324 718.902 297.837 806.105 238.85 946.89C183.107 1079.93 227.1 1283.04 121.211 1358.03C15.2665 1433.05 -101.494 1292.36 -219.457 1271.45Z" fill="#686DE0"/>
+                </svg>
+        </div>
+        <div class="container">
+            <div class="popular__top">
+                <h2 class="title title__popular">Самый популярный фильм на неделе</h2>
+                <a href="" class="popular__link">Посмотреть остальные фильмы</a>
+            </div>
+            <div class="popular__item">
+                <div class="popular__item-img"><img src="img/popular__sam.png" alt="din and sam"></div>
+                <button class="btn btn__popular">Посмотреть</button>
+            </div>
+            <div class="popular__top">
+                <h2 class="title title__popular">Вы хотели посмотреть</h2>
+                <a href="" class="popular__link">Полный список</a>
+            </div>
+            <div class="popular__columns">
+                <div class="popular__column">
+                    <img src="img/popular__column.png" alt="none" class="popular__column-img">
+                    <button class="btn btn__column-popular">Посмотреть</button>
+                </div>
+                <div class="popular__column">
+                    <img src="img/popular__column.png" alt="none" class="popular__column-img">
+                    <button class="btn btn__column-popular">Посмотреть</button>
+                </div>
+                <div class="popular__column">
+                    <img src="img/popular__column.png" alt="none" class="popular__column-img">
+                    <button class="btn btn__column-popular">Посмотреть</button>
+                </div>
+            </div>
         </div>
     </section>
 </body>

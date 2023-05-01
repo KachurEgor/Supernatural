@@ -11,6 +11,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 62.5%;
 }
 
 /* Sections
@@ -22,7 +23,13 @@ html {
 
 body {
   margin: 0;
-}
+  ul {
+    padding: 0;
+  }
+  li  {
+    list-style-type: none;
+  }
+ }
 
 /**
  * Render the `main` element consistently in IE.
@@ -49,7 +56,9 @@ h1 {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-
+ h1 {
+  margin: 0;
+ }
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
@@ -75,6 +84,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**

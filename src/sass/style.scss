@@ -5,11 +5,14 @@
 // @import 'libs/owl.theme.default.min';
 
 @import 'base/_variables';
-// @import 'base/normalize';
-// @import 'base/mixins';
-// @import 'blocks/promo';
+@import 'base/normalize';
+@import 'base/mixins';
 @import 'blocks/header';
-// @import 'blocks/buttons';
+@import 'blocks/popular';
+@import 'base/menu';
+@import 'base/title';
+@import 'base/descr';
+@import 'base/buttons';
 // @import 'blocks/advantage';
 // @import 'blocks/forms';
 // @import 'blocks/consultation';
