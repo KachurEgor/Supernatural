@@ -7,11 +7,7 @@
 @import 'base/_variables';
 @import 'base/normalize';
 @import 'base/mixins';
-@import 'blocks/header';
-@import 'blocks/popular';
-@import 'base/menu';
-@import 'base/title';
-@import 'base/descr';
+
 @import 'base/buttons';
 // @import 'blocks/advantage';
 // @import 'blocks/forms';
@@ -20,6 +16,12 @@
 // @import 'blocks/catalog';
 // @import 'blocks/reviews';
 // @import 'blocks/footer';
+@import 'blocks/header';
+@import 'blocks/popular';
+@import 'base/menu';
+@import 'base/title';
+@import 'base/descr';
+@import 'blocks/news';
 // @import 'blocks/modal';
 // @import 'blocks/pageup';
 // @import 'base/media';
