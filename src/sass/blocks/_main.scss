@@ -1,0 +1,32 @@
+.main {
+.h1{
+    font-size: 48px;
+}
+&__img{
+    position: absolute;
+    right: 0;
+    max-width: 720px;
+}
+
+    // .main__wrapper
+
+    &__wrapper {
+        position: relative;
+        border-radius: 48px;
+border: 1.2px solid #000;
+background: #F4F4F4;
+padding:  calc(20px + 36 * (100vw / 1700));
+.advantages{
+    display: flex;
+    justify-content: space-between;
+    &__item{
+        max-width: 286px;
+        border-radius: 38px 0px;
+border: 1px solid #000;
+background: #F6F6F6;
+padding: 35px 23px;
+font-size: 20px;
+    }
+}
+    }
+}

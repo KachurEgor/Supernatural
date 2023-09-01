@@ -4,11 +4,28 @@
 // @import 'libs/owl.carousel.min';
 // @import 'libs/owl.theme.default.min';
 
-@import 'base/_variables';
-@import 'base/normalize';
+@import 'base/variables';
+@import 'base/normalize'; 
+
+body{
+    font-family: Montserrat-reg;
+}
+* {
+  
+    font-display: swap;
+    margin: 0;  
+}
+.container {
+   max-width: 1685px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+
+
 @import 'base/mixins';
-@import 'base/buttons';
-@import 'base/form';
+// @import 'base/buttons';
+// @import 'base/form';
 // @import 'blocks/advantage';
 // @import 'blocks/forms';
 // @import 'blocks/consultation';
@@ -17,26 +34,24 @@
 // @import 'blocks/reviews';
 // @import 'blocks/footer';
 @import 'blocks/header';
-@import 'blocks/popular';
-@import 'base/menu';
-@import 'base/title';
-@import 'base/descr';
-@import 'blocks/news';
-@import 'blocks/forum';
-@import 'blocks/footer';
-// @import 'base/media';
+ @import 'blocks/main';
+// @import 'base/menu';
+// @import 'base/title';
+// @import 'base/descr';
+// @import 'blocks/news';
+// @import 'blocks/forum';
+// @import 'blocks/footer';
+@import 'base/media';
 
 
-* {
-    font-family: Gilroy , sans-serif;
-    font-display: swap;
-    margin: 0;  
-}
-.container {
-   max-width: 1630px;
-   margin: 0 auto;
-   padding: 0 15px;
-}
-body {
-    background-color: $main-color;
-}
+
+
+$fonts-reg: 'Montserrat-reg', serif;
+$fonts-semibold: 'Montserrat-semibold', serif;
+$main-color: #3d3137;
+$text-color: #fff;
+$text-color_dark: #a7a4a5;
+$text-color_black: #000;
+$text-active: #cc9744;
+
+
