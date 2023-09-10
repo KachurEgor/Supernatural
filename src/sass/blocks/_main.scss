@@ -1,12 +1,17 @@
-
+.main.section{
+  padding-bottom: 10px;
+}
 .main {
-  @include adaptiv-value("padding-top", 150, 50, 0);
+  //@include adaptiv-value("padding-top", 150, 50, 0);
+   
+
   .h1 {
     @include adaptiv-value("font-size", 48, 23, 0);
     margin-bottom: 30px;
   }
   &__content {
     display: flex;
+    justify-content: space-between;
     z-index: 2;
     position: relative;
   }
@@ -20,7 +25,7 @@
     line-height: 1.5;
   }
   &__img {
-    @include adaptiv-value("width", 720, 140, 0);
+    @include adaptiv-value("width", 610, 140, 0);
     position: relative;
     top: 5.6rem;
     }
@@ -30,8 +35,8 @@
     @include adaptiv-value("border-radius", 48, 20, 0);
     border: 1.2px solid #000;
     background: #f4f4f4;
-    @include adaptiv-value("padding", 56, 5, 0);
-    @include adaptiv-value("margin-bottom", 95, 30, 0);
+    @include adaptiv-value("padding", 36, 5, 0);
+  margin-bottom: 30px;
     .advantages {
       display: flex;
       justify-content: space-between;
@@ -103,7 +108,7 @@
     display: flex;
     flex-wrap: wrap;
     //gap: 2rem;
-    @include adaptiv-value("gap", 28, 14, 0);
+    @include adaptiv-value("gap", 24, 10, 0);
 
   }
 
@@ -114,8 +119,8 @@
     border: 2px solid #000;
     background: #f6f6f6;
     @include adaptiv-value("padding", 40, 10, 0);
-    flex: 0 0 18%;
-    min-height: 337px;
+    flex: 0 0 19%;
+    //min-height: 337px;
     &:nth-child(2) {
       background: #d0e0d4;
     }
@@ -134,7 +139,7 @@
     }
     svg {
       @include adaptiv-value("margin-bottom", 35, 10, 0);
-      @include adaptiv-value("width", 99, 60, 0);
+      @include adaptiv-value("width", 90, 40, 0);
       height: auto;
     }
   }
@@ -150,7 +155,7 @@
   &__item-financial {
     display: flex;
     align-items: center;
-    @include adaptiv-value("gap", 188, 20, 0);
+    @include adaptiv-value("gap", 30, 0, 0);
     img {
       @include adaptiv-value("width", 651, 100, 0);
     }
@@ -177,7 +182,7 @@
   &__item-accounting {
     display: flex;
     align-items: center;
-    @include adaptiv-value("gap", 188, 20, 0);
+    @include adaptiv-value("gap", 30, 0, 0);
     img {
       position: relative;
       top: -5rem;
@@ -191,7 +196,7 @@
   &__item-business {
     display: flex;
     align-items: center;
-    @include adaptiv-value("gap", 188, 20, 0);
+    @include adaptiv-value("gap", 30, 0, 0);
     img {
       position: relative;
       top: -5rem;
@@ -243,7 +248,7 @@
   &__item {
     flex: 1 1 26%;
     img {
-      @include adaptiv-value("width", 200, 100, 0);
+      @include adaptiv-value("width", 200, 60, 0);
 
     }
     display: flex;
@@ -309,7 +314,7 @@
 
   &__item {
     flex: 1 1 10rem;
-    height: 34.2rem;
+    //height: 34.2rem;
     @include adaptiv-value("padding-top", 48, 0, 0);
     @include adaptiv-value("padding-right", 10, 0, 0);
     @include adaptiv-value("padding-bottom", 48, 20, 0);
@@ -876,3 +881,4 @@ swiper-slide {
     max-width: 50%;
   }
 }
+

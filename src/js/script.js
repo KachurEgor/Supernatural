@@ -49,10 +49,6 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-
-
-
-
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
@@ -66,3 +62,7 @@ for (let smoothLink of smoothLinks) {
     });
 };
 	
+
+
+
+

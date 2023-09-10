@@ -6,7 +6,52 @@
     font-size: 20px;
   }
 }
+
+
 @media screen and (max-width: 1440px) {
+  .rate{
+    &__title{
+      @include adaptiv-value("font-size", 28, 20, 0);
+    }
+    &__list{
+      @include adaptiv-value("gap", 25, 20, 0);
+    }
+    &__item{
+      @include adaptiv-value("gap", 25, 20, 0);
+    }
+  }
+  .slider{
+    table{
+      .index-big{
+        @include adaptiv-value("font-size", 28, 12, 0);
+      }
+    }
+
+    &__item1{
+      @include adaptiv-value("padding", 20, 10, 0);
+      row-gap: 1rem;
+      @include adaptiv-value("column-gap", 20, 10, 0);
+    }
+    &__title{
+      @include adaptiv-value("font-size", 30, 15, 0);
+    }
+  }
+  .main__wrapper{
+    .advantages__item:nth-child(1){
+      height: 135px;
+    }
+    .advantages__item{
+      height: 95px;
+    }
+  }
+  .main__img {
+    width: calc(140px + 370 * ((100vw - 320px) / 1600));
+}
+.section{
+  @include adaptiv-value("padding-top", 30, 20, 0);
+  @include adaptiv-value("padding-bottom", 30, 20, 0);
+}
+
   // .header__logo {
   //   flex: 1 0 45rem;
   // }
@@ -118,7 +163,7 @@
     flex: 0 0 40%;
   }
   .rate__line {
-    @include adaptiv-value("font-size", 24, 13, 0);
+    @include adaptiv-value("font-size", 24, 15, 0);
     @include adaptiv-value("width", 603, 80, 0);
   }
   .rate__foter-img {
