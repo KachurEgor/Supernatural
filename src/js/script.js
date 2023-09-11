@@ -15,16 +15,17 @@ burger.addEventListener('click', function(){
   // Modal
   const modalTrigger = document.querySelectorAll('[data-modal]'),
   modal = document.querySelector('.modal'),
+  modal2 = document.querySelector('.form')
   modalCloseBtn = document.querySelector('[data-close]');
 modalTrigger.forEach(btn => {
   btn.addEventListener('click', function() {
-   
 	  modal.classList.add('show');
+   
 	  modal.classList.remove('hide');
-
+    modal2.classList.add("tr");
 	  // Либо вариант с toggle - но тогда назначить класс в верстке
-	 document.body.style.overflow = 'hidden';
-
+	 //document.body.style.overflow = 'hidden';
+   
   });
 });
 
@@ -62,7 +63,4 @@ for (let smoothLink of smoothLinks) {
     });
 };
 	
-
-
-
 

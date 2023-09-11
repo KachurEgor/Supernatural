@@ -9,7 +9,34 @@
 
 
 @media screen and (max-width: 1440px) {
+
+  .slider{
+    &__subtitle{
+      @include adaptiv-value("font-size", 17, 13, 0);
+    }
+    &__text{@include adaptiv-value("font-size", 17, 13, 0);
+      
+    }
+  }
+  .modal{
+   
+
+    &__close{
+      font-size: 40px;
+      right: 5px;
+      top: -5px;
+    }
+    &__dialog{
+      max-width: 1000px;
+    }
+  }
+  .main{ padding-top:30px;
+     padding-bottom: 20px;
+  }
   .rate{
+    &__line{
+      @include adaptiv-value("font-size", 20, 12, 0);
+    }
     &__title{
       @include adaptiv-value("font-size", 28, 20, 0);
     }
@@ -40,12 +67,10 @@
     .advantages__item:nth-child(1){
       height: 135px;
     }
-    .advantages__item{
-      height: 95px;
-    }
   }
   .main__img {
     width: calc(140px + 370 * ((100vw - 320px) / 1600));
+    top: 5rem;
 }
 .section{
   @include adaptiv-value("padding-top", 30, 20, 0);
@@ -58,6 +83,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .director{
+    &__item{
+      flex: 0 1 41%;
+    }
+  }
   .main__img{
     top: 0;
   }
@@ -91,7 +121,7 @@
     justify-content: space-evenly;
   }
   .step__item {
-    flex: 0 1 34%;
+    flex: 0 1 44%;
   }
 }
 
@@ -160,11 +190,11 @@
   }
   .rate__item {
     @include adaptiv-value("width", 430, 200, 0);
-    flex: 0 0 40%;
+    flex: 0 0 45%;
   }
   .rate__line {
     @include adaptiv-value("font-size", 24, 15, 0);
-    @include adaptiv-value("width", 603, 80, 0);
+    //@include adaptiv-value("width", 603, 80, 0);
   }
   .rate__foter-img {
     bottom: 111rem;
@@ -181,7 +211,7 @@
    @include adaptiv-value("width", 703, 310, 0);
     }
   input {
-    margin: 15px auto;
+    margin: 10px auto;
     @include adaptiv-value("width", 703, 310, 0);
   }
 }
@@ -219,6 +249,22 @@
     @include adaptiv-value("width", 651, 130, 0);
   }
 }
+
+
+@media screen and (max-width: 655px) {
+.director__item {
+  //@include adaptiv-value("height",459, 250, 0);
+  flex: 0 1 90%;
+  
+}
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
   .modal{
     .btn{
@@ -244,11 +290,7 @@
   .director__wrapper {
     justify-content: center
   }
-  .director__item {
-    @include adaptiv-value("height",459, 310, 0);
-    flex: 0 1 90%;
-    
-  }
+  
   .director__descr {
     @include adaptiv-value("font-size", 48, 13, 0);
    
@@ -312,9 +354,9 @@
   .rate__item {
     flex: 1 1 100%;
   }
-  .rate__line {
+  /*.rate__line {
     @include adaptiv-value("width", 1200, 200, 0);
-  }
+  }*/
   .rate__foter-img {
     display: none;
   }

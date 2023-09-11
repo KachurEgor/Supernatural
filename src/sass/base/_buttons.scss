@@ -16,7 +16,7 @@
       vertical-align: middle;
       @include adaptiv-value("width", 14, 10, 0);
      }
-      @include adaptiv-value("font-size", 20, 12, 0);
+      @include adaptiv-value("font-size", 20, 13, 0);
       font-weight: 600;
       span{
       
@@ -30,7 +30,7 @@
 background: #379C60;
 color: #fff;
 font-weight: 400;
-@include adaptiv-value("font-size", 25, 12, 0);
+@include adaptiv-value("font-size", 25, 13, 0);
 padding: 21px 30px;
 border: none;
 transition: 0.5s;
@@ -60,7 +60,7 @@ color: $main-color;
 background: $text-color-white;
 color: $main-color;
 font-family: $fonts-semibold;
-@include adaptiv-value("font-size", 25, 12, 0);
+@include adaptiv-value("font-size", 25, 13, 0);
 padding: 21px 30px;
 transition: 0.5s;
 }

@@ -1,9 +1,7 @@
-.main.section{
-  padding-bottom: 10px;
-}
+
 .main {
-  //@include adaptiv-value("padding-top", 150, 50, 0);
-   
+  @include adaptiv-value("padding-top", 60, 30, 0);
+  padding-bottom: 10px;
 
   .h1 {
     @include adaptiv-value("font-size", 48, 23, 0);
@@ -53,13 +51,15 @@
         border-radius: 38px 0px;
         border: 1px solid #000;
         background: #f6f6f6;
-        @include adaptiv-value("padding", 16, 5, 0);
-        @include adaptiv-value("font-size", 20, 15, 0);
+                @include adaptiv-value("padding", 16, 5, 0);
+                @include adaptiv-value("font-size", 20, 13, 0);
         height: 122px;
+        @include adaptiv-value("height", 122, 90, 0);
         display: flex;
         align-items: center;
         text-align: center;
-        &:nth-child(1) {
+        &:nth-child(1)
+{
           width: 376px;
           //padding: 20px 30px;
           display: flex;
@@ -240,13 +240,13 @@
     margin-bottom: 5.2rem;
     display: flex;
     flex-wrap: wrap;
-    @include adaptiv-value("gap", 52, 10, 0);
+    @include adaptiv-value("gap", 52, 5, 0);
   }
 
   // .director__item
 
   &__item {
-    flex: 1 1 26%;
+    flex: 0 1 25%;
     img {
       @include adaptiv-value("width", 200, 60, 0);
 
@@ -254,7 +254,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 45.9rem;
+    //height: 45.9rem;
+   // @include adaptiv-value("height", 520, 300, 0);
     @include adaptiv-value("padding-top", 30, 10, 0);
     @include adaptiv-value("padding-right", 32, 12, 0);
     @include adaptiv-value("padding-bottom", 32, 12, 0);
@@ -269,8 +270,11 @@
     color: $text-color;
     font-family: $fonts-semibold;
     @include adaptiv-value("font-size", 32, 20, 0);
+    @include adaptiv-value("margin-top", 35, 15, 0);
+    @include adaptiv-value("margin-bottom", 35, 15, 0);
     span {
       color: $green-text;
+    
     }
   }
 
@@ -409,7 +413,7 @@ swiper-slide {
 .slider {
   // .slider__item1
   &__item1 {
-
+overflow: hidden;
     border: 1px solid #000;
     @include adaptiv-value("border-radius", 48, 20, 0);
     @include adaptiv-value("padding", 30, 20, 0);
@@ -420,6 +424,7 @@ swiper-slide {
     grid-auto-rows: auto;
     row-gap: 3rem;
     @include adaptiv-value("column-gap", 57, -10, 0);
+    margin-bottom: 50px;
   }
 
   // .slider__item2
@@ -465,7 +470,7 @@ swiper-slide {
     box-sizing: border-box;
     @include adaptiv-value("border-radius", 50, 10, 0);
     border: 1px solid #000;
-    @include adaptiv-value("font-size", 20, 15, 0);
+    @include adaptiv-value("font-size", 20, 13, 0);
     @include adaptiv-value("padding-top", 30, 10, 0);
     @include adaptiv-value("padding-bottom", 30, 10, 0);
     @include adaptiv-value("padding-left", 40, 10, 0);
@@ -473,7 +478,7 @@ swiper-slide {
     grid-column: col1-s/col2-s;
     grid-row: row2-s/row3-s;
     span {
-      @include adaptiv-value("font-size", 28, 20, 0);
+      @include adaptiv-value("font-size", 28, 16, 0);
       font-weight: 600;
       display: block;
       margin-bottom: 18px;
@@ -486,7 +491,7 @@ swiper-slide {
     background-color: $bacground-gray;
     color: $text-color;
     font-family: $fonts-reg;
-    @include adaptiv-value("font-size", 20, 15, 0);
+    @include adaptiv-value("font-size", 20, 13, 0);
     @include adaptiv-value("padding-top", 32, 10, 0);
     @include adaptiv-value("padding-bottom", 20, 10, 0);
     @include adaptiv-value("padding-left", 40, 10, 0);
@@ -501,7 +506,7 @@ swiper-slide {
     grid-column: col2-s/col3-s;
     grid-row: row1-s/row3-s;
     span {
-      @include adaptiv-value("font-size", 28, 20, 0);
+      @include adaptiv-value("font-size", 28, 15, 0);
       display: block;
       font-family: $fonts-semibold;
       margin-bottom: 1.8rem;
@@ -545,6 +550,7 @@ swiper-slide {
     bottom: 12.5rem;
     left: 0;
     margin: 0;
+    z-index: -1;
   }
 
   &__header-img {
@@ -567,7 +573,7 @@ swiper-slide {
   // .rate__item
 
   &__item {
-    @include adaptiv-value("padding-top", 44, 22, 0);
+    @include adaptiv-value("padding-top", 44, 15, 0);
     @include adaptiv-value("padding-bottom", 54, 27, 0);
     @include adaptiv-value("padding-left", 10, 10, 0);
     @include adaptiv-value("padding-right", 10, 10, 0);
@@ -578,6 +584,7 @@ swiper-slide {
     flex-direction: column;
     align-items: center;
     @include adaptiv-value("gap", 53, 20, 0);
+    background-color:#fff;
     a {
       @include adaptiv-value("width", 446, 150, 0);
     }
@@ -617,8 +624,8 @@ swiper-slide {
 
   &__line {
     box-sizing: border-box;
-    @include adaptiv-value("width", 430, 103, 0);
-    @include adaptiv-value("margin-left", 90, 0, 0);
+   // @include adaptiv-value("width", 430, 103, 0);
+    @include adaptiv-value("margin-left", 90, 30, 0);
     color: $text-color;
     font-family: $fonts-reg;
     @include adaptiv-value("font-size", 24, 12, 0);
@@ -695,7 +702,8 @@ swiper-slide {
     @include adaptiv-value("border-radius", 40, 20, 0);
     border: 1px solid #616161;
     background: #fff;
-    padding: 21px 30px;
+    //padding: 21px 30px;
+    padding: 20px;
     color: #616161;
     @include adaptiv-value("font-size", 22, 12, 0);
     font-weight: 400;
@@ -711,7 +719,7 @@ swiper-slide {
 .form-input-width input {
   @include adaptiv-value("width", 703, 350, 0);
   display: block;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 .form-input-width button{
   @include adaptiv-value("width", 703, 350, 0);
@@ -794,21 +802,22 @@ swiper-slide {
     max-width: 700px;
     margin: auto;
     p{
-      margin-bottom: 30px;
+      @include adaptiv-value("margin-bottom", 30, 15, 0);
     }
   }
 }
 .modal__dialog {
-  max-width: 1200px;
+
+  @include adaptiv-value("max-width", 1200, 310, 0);
   margin: 40px auto;
 }
 .modal__content {
   position: relative;
-  @include adaptiv-value("padding", 40, 20, 0);
+  @include adaptiv-value("padding", 30, 20, 0);
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
-  max-height: 80vh;
+  //max-height: 80vh;
   overflow-y: auto;
   margin-left: 5px;
   margin-right: 5px;
@@ -882,3 +891,17 @@ swiper-slide {
   }
 }
 
+.swiper-pagination .swiper-pagination-bullets .swiper-pagination-horizontal {
+  display: none;
+}
+.swiper-pagination {
+  display: none;
+}
+.swiper-pagination-bullet {
+  border-radius:0; // либо вообще удалить эту строчку из CSS
+}
+
+
+.tr{
+  transition: 5s;
+}
