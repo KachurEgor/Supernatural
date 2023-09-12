@@ -811,8 +811,8 @@ template {
 }
 .director__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
+      -ms-flex: 0 1 26%;
+          flex: 0 1 26%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -822,10 +822,10 @@ template {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: calc(10px + 20 * ((100vw - 320px) / 1600));
-  padding-right: calc(12px + 20 * ((100vw - 320px) / 1600));
-  padding-bottom: calc(12px + 20 * ((100vw - 320px) / 1600));
-  padding-left: calc(20px + 33 * ((100vw - 320px) / 1600));
+  padding-top: calc(5px + 25 * ((100vw - 320px) / 1600));
+  padding-right: calc(6px + 26 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(6px + 26 * ((100vw - 320px) / 1600));
+  padding-left: calc(10px + 43 * ((100vw - 320px) / 1600));
   border-radius: calc(20px + 28 * ((100vw - 320px) / 1600));
   border: 1px solid #000;
 }
@@ -836,8 +836,8 @@ template {
   color: #000;
   font-family: "Montserrat-semibold", serif;
   font-size: calc(20px + 12 * ((100vw - 320px) / 1600));
-  margin-top: calc(15px + 20 * ((100vw - 320px) / 1600));
-  margin-bottom: calc(15px + 20 * ((100vw - 320px) / 1600));
+  margin-top: calc(7px + 28 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(7px + 28 * ((100vw - 320px) / 1600));
 }
 .director__title span {
   color: #379C60;
@@ -1492,6 +1492,15 @@ swiper-slide {
   }
 }
 @media screen and (max-width: 1440px) {
+  .solution__item-financial img {
+    width: calc(100px + 400 * ((100vw - 320px) / 1600));
+  }
+  .solution__item-accounting img {
+    width: calc(100px + 400 * ((100vw - 320px) / 1600));
+  }
+  .solution__item-business img {
+    width: calc(100px + 400 * ((100vw - 320px) / 1600));
+  }
   .slider__subtitle {
     font-size: calc(13px + 4 * ((100vw - 320px) / 1600));
   }
@@ -1545,6 +1554,11 @@ swiper-slide {
   .section {
     padding-top: calc(20px + 10 * ((100vw - 320px) / 1600));
     padding-bottom: calc(20px + 10 * ((100vw - 320px) / 1600));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .director__item img {
+    width: calc(0px + 200 * ((100vw - 320px) / 1600));
   }
 }
 @media screen and (max-width: 1200px) {

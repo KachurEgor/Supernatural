@@ -9,7 +9,24 @@
 
 
 @media screen and (max-width: 1440px) {
+.solution__item{
+  &-financial{
+    img{
+      @include adaptiv-value("width", 500, 100, 0);
+    }
+  }
+  &-accounting{
+    img{
+      @include adaptiv-value("width", 500, 100, 0);
+    }
+  }
 
+  &-business{
+    img{
+      @include adaptiv-value("width", 500, 100, 0);
+    }
+  }
+}
   .slider{
     &__subtitle{
       @include adaptiv-value("font-size", 17, 13, 0);
@@ -81,7 +98,14 @@
   //   flex: 1 0 45rem;
   // }
 }
+@media screen and (min-width: 1200px) {
+  .director__item {
+    img {
+      @include adaptiv-value("width", 200, 0, 0);
+    }
+  }
 
+}
 @media screen and (max-width: 1200px) {
   .director{
     &__item{
