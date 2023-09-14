@@ -6,24 +6,65 @@
     font-size: 20px;
   }
 }
-
-
 @media screen and (max-width: 1440px) {
+  .subtitle {
+    @include adaptiv-value("font-size",38, 23, 0);
+    &__text{
+      @include adaptiv-value("font-size", 30, 15, 0);
+    }
+  }
+  
+  .director{
+    &__wrapper{
+      @include adaptiv-value("gap", 22, 5, 0);
+    }
+    &__descr{
+      @include adaptiv-value("font-size", 18, 15, 0);
+    }
+    &__title{
+      @include adaptiv-value("font-size", 25, 20, 0);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      
+    }
+    &__item{
+      img{
+        @include adaptiv-value("width", 70, 60, 0);
+      }
+    }
+  }
+  .problems{
+    &__item{
+      svg{
+        @include adaptiv-value("width", 60, 40, 0);
+      }
+    }
+  }
 .solution__item{
+  &-center{
+    text-align: right;
+    h2{
+      text-align: right
+    }
+  }
+  &-descr{
+    @include adaptiv-value("font-size", 28, 15, 0);
+    
+  }
   &-financial{
     img{
-      @include adaptiv-value("width", 500, 100, 0);
+      @include adaptiv-value("width", 600, 100, 0);
     }
   }
   &-accounting{
     img{
-      @include adaptiv-value("width", 500, 100, 0);
+      @include adaptiv-value("width", 400, 100, 0);
     }
   }
 
   &-business{
     img{
-      @include adaptiv-value("width", 500, 100, 0);
+      @include adaptiv-value("width", 600, 100, 0);
     }
   }
 }
@@ -36,8 +77,6 @@
     }
   }
   .modal{
-   
-
     &__close{
       font-size: 40px;
       right: 5px;
@@ -56,25 +95,31 @@
     }
     &__title{
       @include adaptiv-value("font-size", 28, 20, 0);
+      margin-bottom: 0
     }
     &__list{
-      @include adaptiv-value("gap", 25, 20, 0);
+      @include adaptiv-value("gap", 15, 20, 0);
     }
     &__item{
       @include adaptiv-value("gap", 25, 20, 0);
     }
   }
+ /* .hide {           
+    opacity: 1;
+    @include adaptiv-value("height", 250, 150, 0);
+    
+  }*/
   .slider{
     table{
       .index-big{
         @include adaptiv-value("font-size", 28, 12, 0);
       }
     }
-
     &__item1{
       @include adaptiv-value("padding", 20, 10, 0);
-      row-gap: 1rem;
-      @include adaptiv-value("column-gap", 20, 10, 0);
+      row-gap: 0.5rem;
+      @include adaptiv-value("column-gap", 20, 0, 0);
+      grid-template-rows: [row1-s] minmax(100px, 113px) [row2-s] minmax(150px, auto) [row3-s] minmax(150px, 1fr);
     }
     &__title{
       @include adaptiv-value("font-size", 30, 15, 0);
@@ -87,7 +132,7 @@
   }
   .main__img {
     width: calc(140px + 370 * ((100vw - 320px) / 1600));
-    top: 5rem;
+    top: 3rem;
 }
 .section{
   @include adaptiv-value("padding-top", 30, 20, 0);
@@ -99,11 +144,11 @@
   // }
 }
 @media screen and (min-width: 1200px) {
-  .director__item {
+  /*.director__item {
     img {
       @include adaptiv-value("width", 200, 0, 0);
     }
-  }
+  }*/
 
 }
 @media screen and (max-width: 1200px) {
@@ -375,9 +420,15 @@
     flex: 0 1 90%;
     height: auto;
   }
-  .rate__item {
+  .rate
+  {
+    &__list{
+      max-height:none;
+      overflow: visible;
+    }
+    &__item {
     flex: 1 1 100%;
-  }
+  }}
   /*.rate__line {
     @include adaptiv-value("width", 1200, 200, 0);
   }*/

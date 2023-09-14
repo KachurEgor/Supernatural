@@ -5,22 +5,17 @@ let menu = document.querySelector('.header__navigation');
 burger.addEventListener('click', function(){
 	burger.classList.toggle('active');
 	menu.classList.toggle('active');
-
-  
-
 });
-
 
 
   // Modal
   const modalTrigger = document.querySelectorAll('[data-modal]'),
   modal = document.querySelector('.modal'),
-  modal2 = document.querySelector('.form')
+  modal2 = document.querySelector('.form'),
   modalCloseBtn = document.querySelector('[data-close]');
-modalTrigger.forEach(btn => {
+  modalTrigger.forEach(btn => {
   btn.addEventListener('click', function() {
-	  modal.classList.add('show');
-   
+	modal.classList.add('show');
 	  modal.classList.remove('hide');
     modal2.classList.add("tr");
 	  // Либо вариант с toggle - но тогда назначить класс в верстке
@@ -35,9 +30,7 @@ function closeModal() {
   // Либо вариант с toggle - но тогда назначить класс в верстке
  document.body.style.overflow = '';
 }
-
 modalCloseBtn.addEventListener('click', closeModal);
-
 modal.addEventListener('click', (e) => {
   if (e.target === modal) {
 	  closeModal();
@@ -63,4 +56,20 @@ for (let smoothLink of smoothLinks) {
     });
 };
 	
+
+
+
+
+togle_btn = document.querySelectorAll('.togle'),
+togle_block = document.querySelector('.togle_block');
+
+togle_btn.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    togle_block.classList.toggle('hide');
+  });
+});
+
+
+
+
 

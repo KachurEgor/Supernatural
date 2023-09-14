@@ -52,7 +52,7 @@
         border: 1px solid #000;
         background: #f6f6f6;
                 @include adaptiv-value("padding", 16, 5, 0);
-                @include adaptiv-value("font-size", 20, 13, 0);
+                @include adaptiv-value("font-size", 20, 15, 0);
         height: 122px;
         @include adaptiv-value("height", 122, 90, 0);
         display: flex;
@@ -155,7 +155,8 @@
   &__item-financial {
     display: flex;
     align-items: center;
-    @include adaptiv-value("gap", 30, 0, 0);
+    //@include adaptiv-value("gap", 30, 0, 0);
+    justify-content: space-around;
     img {
       @include adaptiv-value("width", 651, 100, 0);
     }
@@ -164,7 +165,7 @@
   // .solution__item-text
 
   &__item-text {
-    flex: 1 1 auto;
+    flex: 0 1 60%;
     h2 {
       text-align: left;
     }
@@ -172,7 +173,7 @@
   // .solution__item-descr
 
   &__item-descr {
-    @include adaptiv-value("margin-top", 60, 10, 0);
+
     color: $text-color;
     @include adaptiv-value("font-size", 35, 14, 0);
   }
@@ -180,9 +181,10 @@
   // .solution__item-accounting
 
   &__item-accounting {
+    justify-content: space-around;
     display: flex;
     align-items: center;
-    @include adaptiv-value("gap", 30, 0, 0);
+    //@include adaptiv-value("gap", 30, 0, 0);
     img {
       position: relative;
       top: -5rem;
@@ -194,9 +196,10 @@
   // .solution__item-business
 
   &__item-business {
+    justify-content: space-around;
     display: flex;
     align-items: center;
-    @include adaptiv-value("gap", 30, 0, 0);
+    //@include adaptiv-value("gap", 30, 0, 0);
     img {
       position: relative;
       top: -5rem;
@@ -240,7 +243,8 @@
     margin-bottom: 5.2rem;
     display: flex;
     flex-wrap: wrap;
-    @include adaptiv-value("gap", 52, 5, 0);
+   justify-content: center;
+    @include adaptiv-value("gap", 40, 5, 0);
   }
 
   // .director__item
@@ -256,9 +260,9 @@
     justify-content: space-around;
     //height: 45.9rem;
    // @include adaptiv-value("height", 520, 300, 0);
-    @include adaptiv-value("padding-top", 30, 5, 0);
-    @include adaptiv-value("padding-right", 32, 6, 0);
-    @include adaptiv-value("padding-bottom", 32, 6, 0);
+    @include adaptiv-value("padding-top", 30, 10, 0);
+    @include adaptiv-value("padding-right", 32, 10, 0);
+    @include adaptiv-value("padding-bottom", 32, 10, 0);
     @include adaptiv-value("padding-left", 53, 10, 0);
     @include adaptiv-value("border-radius", 48, 20, 0);
     border: 1px solid #000;
@@ -399,15 +403,6 @@
 
 swiper-slide {
   width: 80%;
-}
-
-
-.case {
-  // .case__slider
-
-  &__slider {
-   
-  }
 }
 
 .slider {
@@ -573,6 +568,8 @@ overflow: hidden;
   // .rate__item
 
   &__item {
+   
+
     @include adaptiv-value("padding-top", 44, 15, 0);
     @include adaptiv-value("padding-bottom", 54, 27, 0);
     @include adaptiv-value("padding-left", 10, 10, 0);
@@ -606,9 +603,13 @@ overflow: hidden;
   // .rate__list
 
   &__list {
+    max-height: 450px;
+   padding-right: 10px;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     @include adaptiv-value("gap", 43, 20, 0);
+    
   }
 
   // .rate__list-gray
@@ -625,7 +626,7 @@ overflow: hidden;
   &__line {
     box-sizing: border-box;
    // @include adaptiv-value("width", 430, 103, 0);
-    @include adaptiv-value("margin-left", 90, 30, 0);
+    @include adaptiv-value("margin-left", 60, 30, 0);
     color: $text-color;
     font-family: $fonts-reg;
     @include adaptiv-value("font-size", 24, 12, 0);
@@ -812,6 +813,7 @@ overflow: hidden;
   margin: 40px auto;
 }
 .modal__content {
+  
   position: relative;
   @include adaptiv-value("padding", 30, 20, 0);
   background-color: #fff;
@@ -821,6 +823,20 @@ overflow: hidden;
   overflow-y: auto;
   margin-left: 5px;
   margin-right: 5px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+
 }
 .modal__close {
   position: absolute;
@@ -858,9 +874,7 @@ overflow: hidden;
 .show {
   display: block;
 }
-.hide {
-  display: none;
-}
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -904,4 +918,59 @@ overflow: hidden;
 
 .tr{
   transition: 5s;
+}
+
+
+
+.togle{
+  text-align: center;
+cursor: pointer;
+font-size: 20px;
+text-decoration: underline;
+}
+.togle_block {
+ /* height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 1s;
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;*/
+}
+.hide {           
+  //opacity: 1;
+  //@at-root adaptiv-value("height", 370, 120, 0);
+  display:none;
+}
+
+
+.more {
+  max-height: none;  
+  overflow: visible;
+  
+}  
+
+
+/* Работает в Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color:rgb(202, 200, 200);
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+
+}
+
+*::-webkit-scrollbar-track {
+  background:rgba(233, 232, 232, 0.76);
+}
+
+*::-webkit-scrollbar-thumb {
+
+  background-color: $main-color;
+  border-radius: 20px;
+  border: 1px solid rgb(233, 232, 232);
 }
